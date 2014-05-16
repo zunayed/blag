@@ -52,7 +52,7 @@ EXTRA_PATH_METADATA = {
 
 #Theme
 # Defaults to using the octopress theme for pelican:
-THEME = './themes/octopress'
+THEME = './themes/pelican-svbtle-master'
 SINGLE_AUTHOR = False
 DISPLAY_CATEGORIES_ON_MENU = True
 DEFAULT_DATE_FORMAT = ('%b %d %Y')
