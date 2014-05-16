@@ -5,18 +5,18 @@ AUTHOR = u"Zunayed A. Morsalin"
 SITENAME = u"Attempts at machine language"
 # SITESUBTITLE = u""
 # Uncomment the follow to add a "About the Author" section to the navigation pane:
-AUTHOR_ABOUT = u'I\'m  Sample Author. You may remember me from such example git repos as ...'
+# AUTHOR_ABOUT = u'I\'m  Sample Author. You may remember me from such example git repos as ...'
 TIMEZONE = 'US/Eastern'
 
 DEFAULT_LANG = 'en'
 
-DEFAULT_PAGINATION = 3
+# DEFAULT_PAGINATION = 3
 
 # By default we enable pretty highlighing in markdown:
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc']
 
 # Leave this blank for local development, publishconf.py has the "real" value:
-SITEURL = ''
+SITEURL = 'http://blog.dtostillwell.com'
 
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -81,5 +81,5 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
 LINKS = (('Portfolio', 'http://zunayed.github.com'),
         ('Github', 'http://github.com/zunayed'),)
 
-# GOOGLE_ANALYTICS
+GOOGLE_ANALYTICS = 'UA-51057520-1'
 AUTHOR_BIO = "Electrical Engineer & Software Engineer"
