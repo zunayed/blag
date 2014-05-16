@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u"Sample Author"
-SITENAME = u"My Sample Blog"
-SITESUBTITLE = u"Blogs, Blags, and Blagollas"
+AUTHOR = u"Zunayed A. Morsalin"
+SITENAME = u"Attempts at machine language"
+# SITESUBTITLE = u""
 # Uncomment the follow to add a "About the Author" section to the navigation pane:
 AUTHOR_ABOUT = u'I\'m  Sample Author. You may remember me from such example git repos as ...'
 TIMEZONE = 'US/Eastern'
@@ -75,3 +75,11 @@ PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
 ARTICLE_URL = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
 
+
+# theme settings
+# Blogroll
+LINKS = (('Portfolio', 'http://zunayed.github.com'),
+        ('Github', 'http://github.com/zunayed'),)
+
+# GOOGLE_ANALYTICS
+AUTHOR_BIO = "Electrical Engineer & Software Engineer"
