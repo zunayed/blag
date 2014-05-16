@@ -82,4 +82,4 @@ LINKS = (('Portfolio', 'http://zunayed.github.com'),
         ('Github', 'http://github.com/zunayed'),)
 
 GOOGLE_ANALYTICS = 'UA-51057520-1'
-AUTHOR_BIO = "Electrical Engineer & Software Engineer"
+AUTHOR_BIO = "Electrical & Software Engineer"
