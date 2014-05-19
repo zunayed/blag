@@ -83,3 +83,5 @@ LINKS = (('Portfolio', 'http://zunayed.github.com'),
 
 GOOGLE_ANALYTICS = 'UA-51057520-1'
 AUTHOR_BIO = "Electrical & Software Engineer"
+
+DISQUS_SITENAME = 'dtostillwell'
