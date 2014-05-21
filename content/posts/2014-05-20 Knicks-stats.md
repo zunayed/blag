@@ -7,7 +7,7 @@ Author: Zunayed Morsalin
 Summary: Scraping nba.com and making a cloropeth of knicks failure 
 
 ## Live demo - http://knicks-stats.dtostillwell.com/
--<img width="960" src="/images/smiley.png"  title="Knicks" />
+-<img width="960" src="/images/knicks_stats.png"  title="Knicks" />
 
 
 The nba stats [website](http://www.nba.com/knicks/stats/team) is an excelent place to get all kinds of info about a team. However the is no easy way to get that data yourself without some web scrapping. I found some apis but they all cost hundreds of dollars a month :(
@@ -146,7 +146,7 @@ var createMap = function (states) {
 };
 
 
-//D3 hoverbox info way
+//D3 hoverbox info
 var mouseover = function() {
     d3.select(this).style("stroke-width", "4px");
     var state_name = d3.select(this).attr("state");
