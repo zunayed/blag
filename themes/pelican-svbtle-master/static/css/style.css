@@ -175,10 +175,10 @@ section#posts blockquote {
   padding: 0 0 0 20px;
   display: inline-block;
   border-left: 10px solid #0e94ec;
-  max-width: 1000px;
+  max-width: 1350px;
 }
 section#posts blockquote p {
-  width: 1000px;
+  width: 1350px;
 }
 section#posts code {
   margin: 0;
@@ -286,7 +286,7 @@ section#posts article {
   line-height: 25px;
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 620px;
+  width: 1000px;
 }
 section#posts article #title {
   font-family: 'Freight-Sans-Pro', 'Proxima Nova', 'Open Sans', 'Lato', sans-serif;
