@@ -6,7 +6,7 @@ Slug: knicks-stats
 Author: Zunayed Morsalin
 Summary: Scraping nba.com and making a cloropeth of knicks failure 
 
-Live demo - http://knicks-stats.dtostillwell.com/
+Live demo - [http://knicks-stats.dtostillwell.com/](http://knicks-stats.dtostillwell.com/)
 
 -<img width="960" src="/images/knicks_stats.png"  title="Knicks" />
 
