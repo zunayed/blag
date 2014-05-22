@@ -1,6 +1,6 @@
 Title: Knicks Stats →
 Date: 2014-05-20
-Tags: Javascript, D3.js, data, visualization
+Tags: Javascript, D3.js, data, visualization, webscraping, sadteam
 Category: code
 Slug: knicks-stats
 Author: Zunayed Morsalin
