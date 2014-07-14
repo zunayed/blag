@@ -2,10 +2,15 @@ Title: Idiomatic Python →
 Date: 2014-07-16
 Tags: python
 Category: code
-Slug: idiomatic-dpython
+Slug: idiomatic-python
 Author: Zunayed Morsalin
 Summary: Notes from Raymond Hettinger talk - Transforming Code into Beautiful, Idiomatic Python
 
+## Table of Contents  
+[Looping over a range of numbers](#loop_range_num)   
+[Code and Syntax Highlightingg](#code)    
+
+<a name="code"/>
 ## Looping over a range of numbers
 
 ```python
@@ -24,7 +29,7 @@ for i in xrange(6):
     print i**2
 
 ```
-xrange creates an iteriator over the range producing the value one at a time
+xrange creates an iterator over the range producing the value one at a time
 In python 3 range is replaced with xrange
 
 ## Looping over a collection
@@ -55,7 +60,7 @@ for color in reversed(colors):
     print color
 ```
 
-## Looping over a collection and indicies
+## Looping over a collection and indices's
 
 ```python
 colors = ['red', 'green', 'blue', 'yellow']
@@ -64,7 +69,7 @@ colors = ['red', 'green', 'blue', 'yellow']
 for i in range(len(color)):
     print i, '-->', colors[i]
 
-## Do this to save you from tracking the indices 
+## Do this to save you from tracking the indices's 
 for i, color in enumerate(colors):
     print i, '-->', colors[i]
 ```
@@ -101,9 +106,48 @@ def compare_length(c1, c2):
     if len(c1) > len(c2): return 1
     return 0
 
-print sorted(colros, cmp=compare_length)
+print sorted(colors, cmp=compare_length)
 ```
 
-So lets say you have a list of a million items and you're doing a sort the number of comparasions is nlog(n). 
+So lets say you have a list of a million items and you're doing a sort the number of comparisons is nlog(n). 
 
+## Counting with dictionaries
+
+```python
+colors = ['red', 'green', 'red', 'blue', 'green', 'red']
+
+## Default way
+d = {}
+for color in colors:
+    if color not in d:
+        d[color] = 0
+    d[color] += 1
+
+## A better way using get
+for color in colors:
+    d[color] = d.get(color, 0) + 1
+
+
+## a even better way
+d = defaultdict(int)
+for color in colors:
+    d[color] += 1
+
+```
+
+## Grouping with dictionaries
+
+```python
+names = ['raymond', 'rachel', 'matthew', 'roger', 
+         'betty', 'melissa', 'judith', 'charlie']
+
+## standard way
+d = {}
+for name in names:
+    key = len(name)
+    if key not in d:
+        d[key] = []
+    d[key].append(name)
+
+## a better way
 
