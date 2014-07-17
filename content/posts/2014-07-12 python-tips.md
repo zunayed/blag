@@ -7,10 +7,16 @@ Author: Zunayed Morsalin
 Summary: Notes from Raymond Hettinger talk - Transforming Code into Beautiful, Idiomatic Python
 
 ## Table of Contents  
-[Looping over a range of numbers](#loop_range_num)   
-[Code and Syntax Highlightingg](#code)    
+[Looping over a range of numbers](#loop1)   
+[Looping over a collection](#loop2)    
+[Looping backwards](#loop3)    
+[Looping over a collection and indices's](#loop4)    
+[Looping over two collection](#loop5)    
+[Custom sort order](#customsort)    
+[Counting with dictionaries](#count1)    
+[Grouping with dictionaries](#count2)    
 
-<a name="code"/>
+<a name="loop1"/>
 ## Looping over a range of numbers
 
 ```python
@@ -21,7 +27,6 @@ for i in range(6):
     print i**2
 
 ```
-
 Given a large range(1,000,000) it will consume 32mb of memory on a x64 system
 
 ```python
@@ -31,7 +36,8 @@ for i in xrange(6):
 ```
 xrange creates an iterator over the range producing the value one at a time
 In python 3 range is replaced with xrange
-
+----------------------------------
+<a name="loop2"/>
 ## Looping over a collection
 
 ```python
@@ -45,7 +51,8 @@ for i in range(len(color)):
 for color in colors:
     print color
 ```
-
+----------------------------------
+<a name="loop3"/>
 ## Looping backwards
 
 ```python
@@ -59,7 +66,8 @@ for i in range(len(color)-1, -1, -1):
 for color in reversed(colors):
     print color
 ```
-
+----------------------------------
+<a name="loop4"/>
 ## Looping over a collection and indices's
 
 ```python
@@ -73,7 +81,8 @@ for i in range(len(color)):
 for i, color in enumerate(colors):
     print i, '-->', colors[i]
 ```
-
+----------------------------------
+<a name="loop5"/>
 ## Looping over two collection 
 
 ```python
@@ -96,7 +105,8 @@ Zip is great but it creates a third list in memory consisting of tuples with poi
 for name, color in izip(names, colors):
     print name, '-->', color
 ```
-
+----------------------------------
+<a name="customsort"/>
 ## Custom sort order
 ```python
 colors = ['red', 'green', 'blue', 'yellow']
@@ -108,9 +118,10 @@ def compare_length(c1, c2):
 
 print sorted(colors, cmp=compare_length)
 ```
-
+----------------------------------
 So lets say you have a list of a million items and you're doing a sort the number of comparisons is nlog(n). 
 
+<a name="count1"/>
 ## Counting with dictionaries
 
 ```python
@@ -135,6 +146,7 @@ for color in colors:
 
 ```
 
+<a name="count2"/>
 ## Grouping with dictionaries
 
 ```python
@@ -150,4 +162,4 @@ for name in names:
     d[key].append(name)
 
 ## a better way
-
+```
