@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u"Zunayed A. Morsalin"
+AUTHOR = u"Home"
 SITENAME = u"Attempts at machine language"
 # SITESUBTITLE = u""
 # Uncomment the follow to add a "About the Author" section to the navigation pane:
@@ -17,6 +17,7 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc']
 
 # Leave this blank for local development, publishconf.py has the "real" value:
 SITEURL = 'http://blog.dtostillwell.com'
+# SITEURL = 'http://localhost:8000'
 
 DISPLAY_CATEGORIES_ON_MENU = True
 
@@ -82,6 +83,6 @@ LINKS = (('Portfolio', 'http://zunayed.github.com'),
         ('Github', 'http://github.com/zunayed'),)
 
 GOOGLE_ANALYTICS = 'UA-51057520-1'
-AUTHOR_BIO = "Electrical & Software Engineer"
+AUTHOR_BIO = "Electrical & Software Engineering blog by Zunayed A. Morsalin"
 
 DISQUS_SITENAME = 'dtostillwell'
