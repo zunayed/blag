@@ -126,9 +126,11 @@ def compare_length(c1, c2):
     return 0
 
 print sorted(colors, cmp=compare_length)
+
+## Do this instead
+print sorted(colors, key=len)
 ```
 ----------------------------------
-So lets say you have a list of a million items and you're doing a sort the number of comparisons is nlog(n). 
 
 <a name="count1"/>
 ## Counting with dictionaries
