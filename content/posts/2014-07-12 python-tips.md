@@ -14,8 +14,12 @@ Summary: Notes from Raymond Hettinger talk - Transforming Code into Beautiful, I
 [Looping over two collection](#loop5)    
 [Custom sort order](#customsort)    
 [Counting with dictionaries](#count1)    
-[Grouping with dictionaries](#count2)    
+[Grouping with dictionaries](#group)    
+[Unpacking sequences](#unpack)    
+[Updating multiple state variables](#state)    
 
+
+----------------------------------
 <a name="loop1"/>
 ## Looping over a range of numbers
 
@@ -145,8 +149,8 @@ for color in colors:
     d[color] += 1
 
 ```
-
-<a name="count2"/>
+----------------------------------
+<a name="group"/>
 ## Grouping with dictionaries
 
 ```python
@@ -162,4 +166,143 @@ for name in names:
     d[key].append(name)
 
 ## a better way
+d = {}
+for name in names:
+    key = len(names)
+    d.setdefault(key, []).append(name)
+
+## better way
+d = defaultdict(list)
+for names in names:
+    key = len(names)
+    d[key].append(name)
 ```
+----------------------------------
+<a name="link"/>
+## Linking dictionary
+```python
+defaults = {'color':'red','user':'guest'}
+os_args = os.environ
+command_line_args = {'color':'blue'}
+
+## normally you take your defaults and replace it with 
+## os.environments and then again replace it if you have 
+## command line args
+
+d = defaults.copy()
+d.update(os_args)
+d.update(command_line_args)
+
+## The problem with this is its making a ton of dictionaries 
+## We can simplify it with
+d = ChainMap(command_line_args, os.environ, defaults)
+
+```
+----------------------------------
+<a name="unpack"/>
+## Unpacking sequences
+
+```python
+p = 'Rymound', 'Hettinger', 0x30, 'python@example.com'
+
+## instead of this
+fname = p[0]
+lname = p[1]
+age = p[2]
+email = p[3]
+
+## do this instead
+fname, lname, age, email = p
+
+```
+----------------------------------
+<a name="state"/>
+## Updating multiple state variables 
+
+```python
+def fibonacci(n):
+    x = 0
+    y = 1
+    for i in range(n):
+        print x
+        t = y
+        y = x + y
+        x = t
+
+## Better way - This uses tuple packing to allow 
+## for simultaneous variable updates
+def fibonacci(n):
+    x, y = 0, 1
+    for i in range(n):
+        print x
+        x, y = y, x+y
+```
+
+----------------------------------
+<a name="strings"/>
+## Concatenating strings
+
+```python
+names = ['raymond', 'rachel', 'matthew', 'roger', 
+         'betty', 'melissa', 'judith', 'charlie']
+
+## don't do this since its is quadratic behavior and creates multiple copies of the string
+s = names[0]
+for name in names[1:]:
+    s += ', ' + name
+print s
+
+## use join instead
+print ', '.join(names)
+```
+
+----------------------------------
+<a name="deque"/>
+## Updating sequences 
+
+```python
+names = ['raymond', 'rachel', 'matthew', 'roger', 
+         'betty', 'melissa', 'judith', 'charlie']
+
+## using the wrong data structure for these task
+del names[0]
+names.pop(0)
+names.insert(0, 'mark')
+
+## the correct data structure to use is deque
+names = deque(['raymond', 'rachel', 'matthew', 'roger', 
+         'betty', 'melissa', 'judith', 'charlie'])
+
+del name[0]
+names.popleft()
+names.appendleft('mark')
+```
+
+Deque (a doubly-linked list of block nodes) are thread-safe, the contents can even be consumed from both ends at the same time from separate thread
+
+From stackoverflow - 
+> Python lists are much better for random-access and fixed-length operations, including slicing, while deques are much more useful for pushing and popping things off the ends, with indexing (but not slicing, interestingly) being possible but slower than with lists"
+
+Quote break
+
+----------------------------------
+<a name="file"/>
+## Open and close files
+
+```python
+## don't do this
+f = open('data.txt')
+try:
+    data = f.read()
+finally:
+    f.close()
+
+## use this instead
+with open('data.txt') as f:
+    data = f.read()
+```
+
+----------------------------------
+<a name="temp"/>
+## Factoring out temporary context 
+
