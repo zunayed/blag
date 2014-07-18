@@ -6,6 +6,9 @@ Slug: idiomatic-python
 Author: Zunayed Morsalin
 Summary: Notes from Raymond Hettinger talk - Transforming Code into Beautiful, Idiomatic Python
 
+
+I recently watched Raymond Hettinger talk - Transforming Code into Beautiful, Idiomatic Python(https://www.youtube.com/watch?v=OSGv2VnC0go)  and found out a bunch of helpful tips. I highly recommend everyone to check it out. If you don’t have an hour to kill you can check out my notes for a quick read and pasteable code 
+
 ## Table of Contents  
 [Looping over a range of numbers](#loop1)   
 [Looping over a collection](#loop2)    
