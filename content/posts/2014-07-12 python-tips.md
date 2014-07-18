@@ -309,12 +309,16 @@ with open('data.txt') as f:
 ## List comprehension and generator expressions
 
 ```python
+## hell naw
 results = []
 for i in range(10):
     s = i ** 2
     results.append(s)
 print sum(results)
 
+## hell yes
 print sum([i ** 2 for i in xrange(10)])
 
 print sum(i ** 2 for i in xrange(10))
+```
+
