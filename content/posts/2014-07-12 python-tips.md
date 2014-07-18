@@ -1,5 +1,5 @@
 Title: Idiomatic Python →
-Date: 2014-07-16
+Date: 2014-07-18
 Tags: python
 Category: code
 Slug: idiomatic-python
@@ -16,8 +16,10 @@ Summary: Notes from Raymond Hettinger talk - Transforming Code into Beautiful, I
 [Counting with dictionaries](#count1)    
 [Grouping with dictionaries](#group)    
 [Unpacking sequences](#unpack)    
-[Updating multiple state variables](#state)    
-
+[Updating multiple state variables](#state)  
+[Concatenating strings](#deque)    
+[Open and close files](#file)    
+[List comprehension and generator expressions](#listgen)    
 
 ----------------------------------
 <a name="loop1"/>
@@ -258,7 +260,7 @@ print ', '.join(names)
 
 ----------------------------------
 <a name="deque"/>
-## Updating sequences 
+## Updating sequences with deque
 
 ```python
 names = ['raymond', 'rachel', 'matthew', 'roger', 
@@ -303,6 +305,16 @@ with open('data.txt') as f:
 ```
 
 ----------------------------------
-<a name="temp"/>
-## Factoring out temporary context 
+<a name="listgen"/>
+## List comprehension and generator expressions
 
+```python
+results = []
+for i in range(10):
+    s = i ** 2
+    results.append(s)
+print sum(results)
+
+print sum([i ** 2 for i in xrange(10)])
+
+print sum(i ** 2 for i in xrange(10))
