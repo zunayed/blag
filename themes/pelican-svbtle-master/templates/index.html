@@ -1,20 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
 	{% include "header.html" %}
-
-	<dl>
-		<ol>
+	<div id="post-index" class="container">
+		<ol class="post-list">
 			{% for article in articles_page.object_list %}
-				<li>
-					<h1 class="title">
-						<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a>
-					</h1>
-					<abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr>
-				<div class="entry-content"> {{ article.summary }} </div>
+				<li class="post-stub">
+					<a title="Permalink to {{ article.title }}" href="{{ SITEURL }}/{{ article.url }}" >
+						<h4 class="post-stub-title">{{ article.title }}</h4>
+    					<time class="post-stub-date" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+
+					<!-- <p>{{ article.summary }}</p> -->
+					<!-- <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr> -->
+				<!-- <div class="entry-content"> {{ article.summary }} </div> -->
+					</a>
 				</li>
 			{% endfor %}
 		</ol>
-	</dl>
+	</div>
 
 	{% include 'pagination.html' %}
 {% endblock content %}
+
+
+    <li class="post-stub">
+      <a title="To my friends in the Node community" href="/writing/dear-node-community/">
+        <h4 class="post-stub-title">To my friends in the Node community</h4>
+        <time class="post-stub-date" datetime="2013-11-30 09:09:00">November 30, 2013</time>
+      </a>
+    </li>

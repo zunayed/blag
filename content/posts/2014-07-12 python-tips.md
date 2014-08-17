@@ -1,4 +1,4 @@
-Title: Idiomatic Python →
+Title: Idiomatic Python
 Date: 2014-07-18
 Tags: python
 Category: code
@@ -7,7 +7,7 @@ Author: Zunayed Morsalin
 Summary: Notes from Raymond Hettinger talk - Transforming Code into Beautiful, Idiomatic Python
 
 
-I recently watched Raymond Hettinger talk - Transforming Code into Beautiful, Idiomatic Python(https://www.youtube.com/watch?v=OSGv2VnC0go)  and found out a bunch of helpful tips. I highly recommend everyone to check it out. If you don’t have an hour to kill you can check out my notes for a quick read and pasteable code 
+I recently watched Raymond Hettinger talk - [Transforming Code into Beautiful, Idiomatic Python](https://www.youtube.com/watch?v=OSGv2VnC0go)  and found out a bunch of helpful tips. I highly recommend everyone to check it out. If you don’t have an hour to kill you can check out my notes for a quick read and pasteable code 
 
 ## Table of Contents  
 [Looping over a range of numbers](#loop1)   
@@ -25,7 +25,7 @@ I recently watched Raymond Hettinger talk - Transforming Code into Beautiful, Id
 [List comprehension and generator expressions](#listgen)    
 
 ----------------------------------
-<a name="loop1"/>
+<a name="loop1"></a>
 ## Looping over a range of numbers
 
 ```python
@@ -46,7 +46,7 @@ for i in xrange(6):
 xrange creates an iterator over the range producing the value one at a time
 In python 3 range is replaced with xrange
 ----------------------------------
-<a name="loop2"/>
+<a name="loop2"></a>
 ## Looping over a collection
 
 ```python
@@ -61,7 +61,7 @@ for color in colors:
     print color
 ```
 ----------------------------------
-<a name="loop3"/>
+<a name="loop3"></a>
 ## Looping backwards
 
 ```python
@@ -76,7 +76,7 @@ for color in reversed(colors):
     print color
 ```
 ----------------------------------
-<a name="loop4"/>
+<a name="loop4"></a>
 ## Looping over a collection and indices's
 
 ```python
@@ -91,7 +91,7 @@ for i, color in enumerate(colors):
     print i, '-->', colors[i]
 ```
 ----------------------------------
-<a name="loop5"/>
+<a name="loop5"></a>
 ## Looping over two collection 
 
 ```python
@@ -115,7 +115,7 @@ for name, color in izip(names, colors):
     print name, '-->', color
 ```
 ----------------------------------
-<a name="customsort"/>
+<a name="customsort"></a>
 ## Custom sort order
 ```python
 colors = ['red', 'green', 'blue', 'yellow']
@@ -132,7 +132,7 @@ print sorted(colors, key=len)
 ```
 ----------------------------------
 
-<a name="count1"/>
+<a name="count1"></a>
 ## Counting with dictionaries
 
 ```python
@@ -157,7 +157,7 @@ for color in colors:
 
 ```
 ----------------------------------
-<a name="group"/>
+<a name="group"></a>
 ## Grouping with dictionaries
 
 ```python
@@ -185,7 +185,7 @@ for names in names:
     d[key].append(name)
 ```
 ----------------------------------
-<a name="link"/>
+<a name="link"></a>
 ## Linking dictionary
 ```python
 defaults = {'color':'red','user':'guest'}
@@ -206,7 +206,7 @@ d = ChainMap(command_line_args, os.environ, defaults)
 
 ```
 ----------------------------------
-<a name="unpack"/>
+<a name="unpack"></a>
 ## Unpacking sequences
 
 ```python
@@ -223,7 +223,7 @@ fname, lname, age, email = p
 
 ```
 ----------------------------------
-<a name="state"/>
+<a name="state"></a>
 ## Updating multiple state variables 
 
 ```python
@@ -246,7 +246,7 @@ def fibonacci(n):
 ```
 
 ----------------------------------
-<a name="strings"/>
+<a name="strings"></a>
 ## Concatenating strings
 
 ```python
@@ -264,7 +264,7 @@ print ', '.join(names)
 ```
 
 ----------------------------------
-<a name="deque"/>
+<a name="deque"></a>
 ## Updating sequences with deque
 
 ```python
@@ -293,7 +293,7 @@ From stackoverflow -
 Quote break
 
 ----------------------------------
-<a name="file"/>
+<a name="file"></a>
 ## Open and close files
 
 ```python
@@ -310,7 +310,7 @@ with open('data.txt') as f:
 ```
 
 ----------------------------------
-<a name="listgen"/>
+<a name="listgen"></a>
 ## List comprehension and generator expressions
 
 ```python

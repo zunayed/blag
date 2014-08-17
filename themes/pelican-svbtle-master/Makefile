@@ -9,7 +9,7 @@
 STYLE = default
 
 less:
-	lessc -x static/css/style.less > static/css/style.css
+	sass static/css/style.scss > static/css/style.css
 
 pygments:
 	pygmentize -S ${STYLE} -f html > ./static/css/pygments.css

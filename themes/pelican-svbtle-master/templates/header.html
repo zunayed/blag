@@ -1,20 +1,18 @@
 {% if article and article.author %}
-	<header>
-		<h1>{{ article.author }}'s blog</h1>
-		<h3>Posted {{ article.locale_date }}</h3>
-	</header>
+	<div class="container">
+		<header class="post-header">
+			<h1 class="post-title">{{ article.title }}</h1>
+			<p class="post-date">Posted {{ article.locale_date }}</p class="post-date">
+		</header>
+	</div>
 {% else %}
 	<header>
-		<h1>{{ AUTHOR }}'s blog</h1>
-		<h3>
-			<script type="text/javascript">
-				var currentDate = new Date();
-				var day = currentDate.getDate();
-				var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ];
-				var month = monthNames[currentDate.getMonth()].toUpperCase();
-				var year = currentDate.getFullYear();
-				document.write(month + " " + day + ", " + year);
-			</script>
-		</h3>
+		<div id="post-index" class="container">
+		    <h1 class="post-title">Hi, I&#8217;m Zunayed</h1>
+	        <p class="deck">
+	  			I'm an Electrical & Software Engineer.
+	  			<br>I currently work at <a href="http://www.spies.ws/">Spies & Assassins</a><br>
+			</p>
+		</div>
 	</header>
 {% endif %}
