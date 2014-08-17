@@ -17,7 +17,7 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc']
 
 # Leave this blank for local development, publishconf.py has the "real" value:
 SITEURL = 'http://blog.dtostillwell.com'
-SITEURL = 'http://localhost:8000'
+# SITEURL = 'http://localhost:8000'
 
 DISPLAY_CATEGORIES_ON_MENU = True
 

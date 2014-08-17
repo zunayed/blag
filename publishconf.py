@@ -14,6 +14,7 @@ from pelicanconf import *
 
 # If then you can enable Google Analytics tracking:
 #GOOGLE_ANALYTICS = ''
+SITEURL = 'http://blog.dtostillwell.com'
 
 DELETE_OUTPUT_DIRECTORY = True
 
