@@ -16,8 +16,7 @@ DEFAULT_LANG = 'en'
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc']
 
 # Leave this blank for local development, publishconf.py has the "real" value:
-SITEURL = 'http://blog.dtostillwell.com'
-# SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 
 DISPLAY_CATEGORIES_ON_MENU = True
 
@@ -53,7 +52,7 @@ EXTRA_PATH_METADATA = {
 
 #Theme
 # Defaults to using the octopress theme for pelican:
-THEME = './themes/pelican-svbtle-master'
+THEME = './themes/pelican-svbtle-ghostwriter-mixed-master'
 SINGLE_AUTHOR = False
 DISPLAY_CATEGORIES_ON_MENU = True
 DEFAULT_DATE_FORMAT = ('%b %d %Y')
@@ -79,8 +78,11 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
 
 # theme settings
 # Blogroll
-LINKS = (('Portfolio', 'http://zunayed.github.com'),
-        ('Github', 'http://github.com/zunayed'),)
+LINKS = (
+    ('Portfolio', 'http://zunayed.github.com'),
+    ('Github', 'http://github.com/zunayed'),
+    ('Archive', '/archives.html'),
+)
 
 GOOGLE_ANALYTICS = 'UA-51057520-1'
 AUTHOR_BIO = "Electrical & Software Engineering blog by Zunayed A. Morsalin"
