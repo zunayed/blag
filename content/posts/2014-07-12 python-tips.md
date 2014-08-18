@@ -253,7 +253,8 @@ def fibonacci(n):
 names = ['raymond', 'rachel', 'matthew', 'roger', 
          'betty', 'melissa', 'judith', 'charlie']
 
-## don't do this since its is quadratic behavior and creates multiple copies of the string
+## don't do this since its is quadratic behavior and creates multiple 
+## copies of the string
 s = names[0]
 for name in names[1:]:
     s += ', ' + name
