@@ -35,11 +35,12 @@ FEED_RSS = ''
 STATIC_PATHS = [
     'extras',
     'images'
-    ]
+]
+
 EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path': 'robots.txt'},
     'extras/publickey.asc': {'path': 'publickey.asc'}
-    }
+}
 
 # Here's a sample EXTRA_PATH_METADATA that adds the favicon, an iOS touch icon and a GPG key:
 #EXTRA_PATH_METADATA = {
@@ -58,13 +59,6 @@ DISPLAY_CATEGORIES_ON_MENU = True
 DEFAULT_DATE_FORMAT = ('%b %d %Y')
 #TYPOGRIFY = True
 
-# Blogroll (additional links to display)
-#LINKS = (
-#    ('GitHub', 'https://github.com/sample-user-on-github'),
-#    ('Example', 'http://www.example.com/'),
-#)
-
-
 # Cleaner page links
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
@@ -74,7 +68,6 @@ PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
 # Cleaner Articles
 ARTICLE_URL = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
-
 
 # theme settings
 # Blogroll
