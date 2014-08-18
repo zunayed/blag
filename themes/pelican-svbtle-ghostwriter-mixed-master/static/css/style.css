@@ -129,7 +129,7 @@ table {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  max-width: 889px; }
+  max-width: 1200px; }
 
 #wrapper {
   height: auto;
@@ -424,7 +424,7 @@ table {
 /* ============================================================ */
 .footer {
   background: #303030;
-  color: #D3D3D3;
+  color: lightgray;
   height: 265px;
   margin-top: 95px;
   overflow: auto; }
@@ -442,8 +442,7 @@ table {
   color: #656565;
   font-size: 14px;
   margin: 0;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: center; }
   .footer-copyright a {
     color: #656565;
     font-weight: 700; }

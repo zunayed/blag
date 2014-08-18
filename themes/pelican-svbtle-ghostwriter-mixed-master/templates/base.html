@@ -28,14 +28,11 @@
         <div class="container">
             <div class="site-title-wrapper">
                 <h1 class="site-title"><a href="/"><i class="fa fa-bars"></i> Home</a></h1>
-
                 {% for name, link in LINKS %}
                     <a class="button-square" href="{{ link }}">{{ name }} </a>
                 {% endfor %}
-
             </div>      
         </div>
-
     </header>
 
 	{% block content %}
@@ -44,12 +41,10 @@
     <footer class="footer">
         <div class="container">
             <div class="site-title-wrapper">
-                <!-- <h1 class="site-title"><a class="js-ajax-link" title="Ghostwriter" href="http://ghost.jollygoodthemes.com/ghostwriter">Ghostwriter</a></h1> -->
-
                 <a class="button-square button-jump-top js-jump-top" href="#"><i class="fa fa-angle-up"></i></a>
             </div>
 
-            <p class="footer-copyright">&copy; Zunayed Ali Morsalin / Made with <a href="http://blog.getpelican.com/">Pelican</a> / Based on <a href="https://github.com/roryg/ghostwriter">Ghostwriter</a>  theme</p>
+            <p class="footer-copyright">&copy; Zunayed Ali Morsalin <br/> Made with <a href="http://blog.getpelican.com/">Pelican</a> / Based on <a href="https://github.com/roryg/ghostwriter">Ghostwriter</a>  theme</p>
         </div>
     </footer>
 
