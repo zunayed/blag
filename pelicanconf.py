@@ -22,10 +22,10 @@ DISPLAY_CATEGORIES_ON_MENU = True
 
 FEED_ATOM = ''
 FEED_RSS = ''
-#FEED_DOMAIN = SITEURL
-#CATEGORY_FEED_RSS = 'feeds/category.%s.rss'
-#TAG_FEED_RSS = None
-#FEED_MAX_ITEMS = 30
+FEED_DOMAIN = SITEURL
+CATEGORY_FEED_RSS = 'feeds/category.%s.rss'
+TAG_FEED_RSS = None
+FEED_MAX_ITEMS = 30
 
 # Static files
 # Uncomment and set to the filename of your favicon:
