@@ -48,9 +48,12 @@ Whats great about set_trace is it will drop you into a REPL session and you can 
 
 Great now we have access to this pretty neat tool to drop into our code. Lets never use it again because we can use the cleverly named [ipdb](https://github.com/gotcha/ipdb) package. Ipdb allows you to leverage the excellent ipython REPL when debugging which gives you tab completion and syntax highlighting. I sometimes use it to rapidly prototype and test new functions and methods. 
 
-<img class="align-center" width="960" src="/images/debug_terminal.png"  title="ipdb repl session" />
+<img class="align-center" width="960" src="/images/debug_terminal.gif"  title="ipdb repl session" />
 
 
-### Ipdb
+### Pycharm
 
-Ipdb/pdb has served me very well over the last year but one thing that is still annoying about it is that you still have  to type the variable name or type locals() to see values. You also have to retype them as you step through your code. It would be awesome if we could just watch the variables in a window as you execute
+Ipdb/pdb has served me very well over the last year but one thing that is still annoying about it is you still have to type the variable name or locals() to see values. You also have to retype them as you step through your code. It would be awesome if we could just watch the variables in a window as you execute. Thats where Pycharm's debugger helps. 
+
+<img class="align-center" height="750" src="/images/debug-pycharm.gif"  title="ipdb repl session" />
+
