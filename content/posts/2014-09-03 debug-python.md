@@ -55,5 +55,6 @@ Great now we have access to this pretty neat tool to drop into our code. Lets ne
 
 Ipdb/pdb has served me very well over the last year but one thing that is still annoying about it is you still have to type the variable name or locals() to see values. You also have to retype them as you step through your code. It would be awesome if we could just watch the variables in a window as you execute. Thats where Pycharm's debugger helps. 
 
-<img class="align-center" height="750" src="/images/debug-pycharm.gif"  title="ipdb repl session" />
+<img class="align-center" height="750" src="/images/debug-pycharm.gif"  title="pycharm debugging session" />
 
+If you don't have/want pycharms there are some free alternatives I found like [winpdb](http://winpdb.org/about/) and [PUDB](https://pypi.python.org/pypi/pudb) that look promising. Happy debugging. 
