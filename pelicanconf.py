@@ -72,7 +72,7 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
 # theme settings
 # Blogroll
 LINKS = (
-    ('Portfolio', 'http://zunayed.github.com'),
+    ('Projects', '/projects.html'),
     ('Github', 'http://github.com/zunayed'),
     ('Archive', '/archives.html'),
 )

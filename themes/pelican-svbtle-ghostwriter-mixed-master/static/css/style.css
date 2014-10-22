@@ -73,13 +73,6 @@ blockquote {
   margin-left: auto;
   margin-right: auto; }
 
-img {
-  display: block;
-  margin: 40px 0;
-  width: auto;
-  max-width: 100%;
-  text-align: center; }
-
 pre {
   background: #F1F0EA;
   border: 1px solid #DDDBCC;
@@ -166,9 +159,54 @@ table {
   color: #FFF;
   float: left;
   font-size: 17px;
-  margin: 0 0 0 10px;
-  padding: 3px 8px 4px; }
+  padding: 3px 8px 4px;
+  margin: 0 0 0 10px; }
   .button-square:hover {
+    background: #303030; }
+
+.button-square-red {
+  background: #f03838;
+  color: #FFF;
+  float: left;
+  font-size: 15px;
+  padding: 3px 8px 3px;
+  margin: 0 0 0 5px; }
+  .button-square-red:hover {
+    background: #303030; }
+
+.button-square-green {
+  background-color: #44c767;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+  background: -moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: -webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: -o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: -ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+  background-color: #44c767;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 13px;
+  padding: 1px 46px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627; }
+  .button-square-green:hover {
+    background: #303030; }
+
+.button-square-blue {
+  background: #008cba;
+  color: #FFF;
+  float: left;
+  font-size: 15px;
+  padding: 3px 8px 3px;
+  margin: 0 0 0 5px; }
+  .button-square-blue:hover {
     background: #303030; }
 
 /* ============================================================ */
@@ -431,7 +469,7 @@ table {
 /* ============================================================ */
 .footer {
   background: #303030;
-  color: lightgrey;
+  color: lightgray;
   height: 265px;
   margin-top: 95px;
   overflow: auto; }
@@ -519,3 +557,12 @@ table {
   .author-meta span {
     display: block;
     margin: 18px 0; } }
+/* ============================================================ */
+/* Project */
+/* ============================================================ */
+.project {
+  font-size: 15px;
+  margin-left: 10px; }
+
+.project-image {
+  margin: 0px 0; }
