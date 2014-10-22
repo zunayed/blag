@@ -77,13 +77,13 @@ blockquote {
    margin-right: auto;
 }
 
-img {
-    display: block;
-    margin: 40px 0;
-    width: auto;
-    max-width: 100%;
-    text-align: center;
-}
+// img {
+//     display: block;
+//     margin: 0px 0;
+//     width: auto;
+//     max-width: 100%;
+//     text-align: center;
+// }
 
 pre {
     background: #F1F0EA;
@@ -664,4 +664,26 @@ table {
         display: block;
         margin: 18px 0;
     }
+}
+
+
+/* ============================================================ */
+/* Project */
+/* ============================================================ */
+.project {
+    font-size: 15px;
+    // border-bottom: 1px dotted $secondary;
+    margin-left: 10px;
+
+}
+
+.project-text {
+    // margin-left: 10px;
+
+
+}
+
+.project-image {
+    margin: 0px 0;
+
 }
