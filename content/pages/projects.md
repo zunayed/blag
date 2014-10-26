@@ -28,7 +28,7 @@ Title: projects
         <br/>
         <a href="http://knicks-stats.dtostillwell.com/">Code</a> /
         <a href="https://github.com/zunayed/nba_stats">Demo</a> /
-        <a href="url">Blog</a> 
+        <a href="/posts/2014/Oct/21/nba-stats/">Blog</a> 
         </p>
     </div>
 </div>
