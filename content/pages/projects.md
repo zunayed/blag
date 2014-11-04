@@ -42,8 +42,8 @@ Title: projects
         <strong>Visualization of 2013 NBA Season</strong>
         <p>A Visualization that illustrates the points/percentages/numbers that the selected team achieved compared to other teams in the league. Tools: <strong>python, D3.js</strong> 
         <br/>
-        <a href="http://knicks-stats.dtostillwell.com/">Code</a> /
-        <a href="https://github.com/zunayed/nba_stats">Demo</a> /
+        <a href="https://github.com/zunayed/nba_stats">Code</a> /
+        <a href="http://knicks-stats.dtostillwell.com/">Demo</a> /
         <a href="/posts/2014/Oct/21/nba-stats/">Blog</a> 
         </p>
     </div>
