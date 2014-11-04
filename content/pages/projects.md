@@ -6,6 +6,22 @@ Title: projects
 <div class="project">
 <div class="grid-100">
     <div class="project-text">
+        <img src="/images/projects/complaint_heat.png" height="150" width="203" align="left" style="margin-right: 40px;" />
+
+        <strong>Heatmap of Noisy/Heat complaints throughtout the years</strong>
+        <p>After working with the 311 dataset to determine complaint counts throughtout the year I generated a heatmap of the last 3 years of complaint data.
+        <br/>
+        <a href="https://github.com/zunayed/noisyNYC">Code</a> /
+        <a href="http://noisynyc.dtostillwell.com/time">Demo</a> /
+        <a href="http://nbviewer.ipython.org/github/zunayed/noisyNYC/blob/master/data_analysis/311_data.ipynb">ipython Notebook</a> 
+        </p>
+    </div>
+</div>
+</div>
+
+<div class="project">
+<div class="grid-100">
+    <div class="project-text">
         <img src="/images/projects/noisynyc.jpg" height="150" width="203" align="left" style="margin-right: 40px;" />
 
         <strong>Visualization of noisiest NYC neighborhoods</strong>
