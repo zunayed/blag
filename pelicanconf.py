@@ -81,3 +81,6 @@ GOOGLE_ANALYTICS = 'UA-51057520-1'
 AUTHOR_BIO = "Electrical & Software Engineering blog by Zunayed A. Morsalin"
 
 DISQUS_SITENAME = 'dtostillwell'
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ["render_math"]
