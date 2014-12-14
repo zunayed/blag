@@ -6,9 +6,10 @@ Slug: summation_proof
 Author: Zunayed Morsalin
 Summary: Lessons from a project euler problem
 
-## Proof of sum of consecitive numbers 
 
-## Sigma notation proof
+## Original Problem and brute force method
+## New Solution and benchmarks comparing two
+## Proof of sum of consecutive numbers 
 $$S(n) = \sum_{i=1}^{n} i$$
 
 Now we will reverse the above equation
@@ -25,3 +26,7 @@ $$2S(n) = \sum_{i=1}^{i=1} i + (n + 1 - i)$$
 $$2S(n) = \sum_{i=1}^{i=1} n + 1$$
 $$2S(n) = n(n + 1)$$
 $$ S(n) = \frac{n(n+1)}{2}$$ 
+
+## Proof of sum of squares
+
+
