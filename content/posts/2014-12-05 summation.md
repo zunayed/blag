@@ -8,8 +8,12 @@ Summary: Lessons from a project euler problem
 
 
 ## Original Problem and brute force method
+a brute force solution while fine for small numbers but will be an issue as the limit gets higher
+
 ## New Solution and benchmarks comparing two
+
 ## Proof of sum of consecutive numbers 
+
 $$S(n) = \sum_{i=1}^{n} i$$
 
 Now we will reverse the above equation
