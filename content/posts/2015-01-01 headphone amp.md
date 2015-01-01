@@ -1,5 +1,8 @@
 ## Power supply
 
-capacitors - 
 
+Switch and LED
 
+Capacitors 
+
+potentimoter / switch 
