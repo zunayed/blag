@@ -5,4 +5,6 @@ Switch and LED
 
 Capacitors 
 
-potentimoter / switch 
+Potentimoter / switch 
+
+
