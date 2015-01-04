@@ -7,4 +7,4 @@ Capacitors
 
 Potentimoter / switch 
 
-
+kicad pcp layout
