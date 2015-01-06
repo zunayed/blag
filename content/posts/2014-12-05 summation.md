@@ -11,6 +11,7 @@ Summary: Lessons from a project euler problem
 a brute force solution while fine for small numbers but will be an issue as the limit gets higher
 
 ## New Solution and benchmarks comparing two
+ipython notebook with timeit ?
 
 ## Proof of sum of consecutive numbers 
 
