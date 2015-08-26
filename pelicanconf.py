@@ -69,7 +69,7 @@ PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
 ARTICLE_URL = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
 
-# theme settings
+# Theme settings
 # Blogroll
 LINKS = (
     ('Projects', '/projects.html'),
